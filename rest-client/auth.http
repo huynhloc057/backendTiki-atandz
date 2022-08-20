@@ -1,0 +1,70 @@
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+    "email": "superjunior242@gmail.com",
+    "password": "daylapassword",
+    "name": "Tan Dz"
+}
+###################################################
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+    "email": "lochuynh@gmail.com",
+    "password": "12345678",
+    "name": "Loc"
+}
+
+###################################################
+POST  http://localhost:5000/api/auth/signin
+Content-Type: application/json
+
+{
+    "email": "superjunior242@gmail.com",
+    "password": "daylapassword"
+}
+
+###################################################
+POST  http://localhost:5000/api/auth/signin
+Content-Type: application/json
+
+{
+    "email": "lochuynh@gmail.com",
+    "password": "12345678"
+}
+
+###################################################
+POST  http://localhost:5000/api/auth/updateForgetPassword
+Content-Type: application/json
+
+{
+    "email": "tannv26@gmail.com",
+    "password": "daylapasswordmoi",
+    "otp": "283737"  
+}
+
+###################################################
+POST  http://localhost:5000/api/auth/verifyOtp
+Content-Type: application/json
+
+{
+    "userId": "daylaUserId",
+    "otp": "231231"
+}
+
+###################################################
+POST  http://localhost:5000/api/auth/sendOtpToEmail
+Content-Type: application/json
+
+{
+    "email": "superjunior242@gmail.com"
+}
+
+###################################################
+POST  http://localhost:5000/api/auth/isUserLoggedIn
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmZlMjc3MDIwNmE5YjMxMzBkNmViYTciLCJlbWFpbCI6ImxvY2h1eW5oQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYwODg2Mzg3LCJleHAiOjE2NjM0NzgzODd9.Tf8fKYAosTOcJSLvfw8pal689wKaNQPuDye4NViMn_U
+
+{
+}

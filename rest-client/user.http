@@ -1,0 +1,58 @@
+# update by Admin
+POST http://localhost:5000/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NWExYWEwYWM4MjEzNDg2NTYxMWEiLCJlbWFpbCI6InN1cGVyanVuaW9yMjQyQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjU5MzQ2MDE0LCJleHAiOjE2NjE5MzgwMTR9.UMqoGxnOjPA8i73YC4ONmsrJ-Z0yUXfyxpDBhZmJc9A
+
+{
+    "user": "3123213213",
+    "name": "Tan Dz"
+}
+###################################################
+# update by Admin
+POST http://localhost:5000/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmZlMjc3MDIwNmE5YjMxMzBkNmViYTciLCJlbWFpbCI6ImxvY2h1eW5oQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYwODI4MTIyLCJleHAiOjE2NjM0MjAxMjJ9.7rIYx5uPiNFwBgRJwu9EXm9W1AJqcjtDWHP9UFhZMvs
+
+{
+    "dateOfBirth": "2001-05-07",
+    "email": "lochuynh@gmail.com",
+    "from": "Việt Nam",
+    "name": "Loc",
+    "phone": "",
+    "profilePicture": "http://res.cloudinary.com/ddlhbgn3z/image/upload/v1660828135/test/e0mzapbl3inhwksybpxb.png",
+    "_id": "62fe2770206a9b3130d6eba7"
+}
+
+
+
+# update by User
+###################################################
+POST  http://localhost:5000/api/user/updateUserInfo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NWExYWEwYWM4MjEzNDg2NTYxMWEiLCJlbWFpbCI6InN1cGVyanVuaW9yMjQyQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjU5MzQ2MDE0LCJleHAiOjE2NjE5MzgwMTR9.UMqoGxnOjPA8i73YC4ONmsrJ-Z0yUXfyxpDBhZmJc9A
+
+{
+    "name": "Tan 2k2",
+    "password": "daylamatkhau",
+    "otp": "123121"
+}
+
+# Delete by Admin
+###################################################
+POST  http://localhost:5000/api/user/delete
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NWExYWEwYWM4MjEzNDg2NTYxMWEiLCJlbWFpbCI6InN1cGVyanVuaW9yMjQyQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjU5MzQ2MDE0LCJleHAiOjE2NjE5MzgwMTR9.UMqoGxnOjPA8i73YC4ONmsrJ-Z0yUXfyxpDBhZmJc9A
+
+{
+    "_id": "32432432324223"
+}
+
+###################################################
+# get a user by id
+GET http://localhost:5000/api/user/get
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmZlMjc3MDIwNmE5YjMxMzBkNmViYTciLCJlbWFpbCI6ImxvY2h1eW5oQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjYwODI4MTIyLCJleHAiOjE2NjM0MjAxMjJ9.7rIYx5uPiNFwBgRJwu9EXm9W1AJqcjtDWHP9UFhZMvs
+
+{
+    "_id": "62fe2770206a9b3130d6eba7"
+}
