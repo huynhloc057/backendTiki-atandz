@@ -28,3 +28,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTU1NWExY
     "sizes": "",
     "productPicture": "day la anh"
 }
+
+############################################
+POST https://apiusertiki.herokuapp.com/api/product/getProducts
+Content-Type: multipart/form-data
+
+{
+    
+}
+
+/getProducts
