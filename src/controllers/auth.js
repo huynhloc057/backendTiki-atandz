@@ -74,7 +74,6 @@ exports.signin = async (req, res) => {
 
 exports.signinWithGoogle = async (req, res) => {
   const { token } = req.body;
-  console.log(token);
   try {
     const ticket = await client.verifyIdToken({
       idToken: token,
@@ -86,12 +85,14 @@ exports.signinWithGoogle = async (req, res) => {
       isDisabled: { $ne: true },
     });
     if (existingUser) {
-      const { _id, name, email, profilePicture, role } = existingUser;
+      const { _id, name, email, profilePicture, role, dateOfBirth, from } =
+        existingUser;
       const token = await generateJwtToken(_id, email, role);
       // response token and user info
-      res
-        .status(201)
-        .json({ token, user: { _id, name, email, profilePicture, role } });
+      res.status(201).json({
+        token,
+        user: { _id, name, email, profilePicture, role, dateOfBirth, from },
+      });
     } else {
       const newUser = {
         name,
